@@ -1,7 +1,7 @@
-package com.example.fontreszie;
+﻿package com.example.fontreszie;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.widget.TextView;
 
 import com.ljx.view.FontResizeView;
@@ -24,12 +24,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onFontChange(float fontSize) {
                 mTextView.setTextSize(fontSize);
-                mTextView.setText("当前字体大小:" + fontSize + "sp");
+                mTextView.setText("褰撳墠瀛椾綋澶у皬:" + fontSize + "sp");
             }
         });
 
         float fontSize = fontResizeView.getFontSize();
         mTextView.setTextSize(fontSize);
-        mTextView.setText("当前字体大小:" + fontResizeView.getFontSize() + "sp");
+        mTextView.setText("褰撳墠瀛椾綋澶у皬:" + fontResizeView.getFontSize() + "sp");
     }
 }
+

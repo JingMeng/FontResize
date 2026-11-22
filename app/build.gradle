@@ -1,11 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
+    namespace 'com.example.fontreszie'
+    compileSdk 34
     defaultConfig {
         applicationId "com.example.fontreszie"
-        minSdkVersion 15
-        targetSdkVersion 28
+        minSdk 15
+        targetSdk 34
         versionCode 1
         versionName "1.0"
     }
@@ -14,6 +15,7 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+    
     }
 }
 
@@ -25,3 +27,7 @@ dependencies {
     implementation "com.android.support:recyclerview-v7:28.0.0"
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
 }
+
+
+
+
